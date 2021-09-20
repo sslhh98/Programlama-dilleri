@@ -1,0 +1,22 @@
+F = (3,2,3,1)
+G = (1,2,1,3)
+
+
+f_buyuk = 0
+g_buyuk = 0
+f_kactane = int (input('Kaç durumda G büyük : '))
+g_kactane = int (input('Kaç durumda F büyük : '))
+bosluk = int (input('Kaç adet boşluk bulunmakta : '))
+i = 0
+while i<len (F):
+    if F[1] - G[i] > 0:
+        f_buyuk += 1
+    elif F[i] - G[i] < 0:
+        g_buyuk += 1
+    i += 1   
+
+print(g_kactane - g_buyuk, 'tane G büyük olması gerekiyor')
+print (bosluk-(g_kactane - g_buyuk), 'tane F büyük olması gerekiyor')
+
+print (f_kactane - f_buyuk, 'tane G büyük olması gerekiyor')
+print (bosluk-(f_kactane - f_buyuk), 'tane F büyük olması gerekiyor')

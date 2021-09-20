@@ -1,0 +1,5 @@
+ucgen_sayisi = int(input('Kaç adet üçgen kesilecek : '))
+olusan_sekil = int(input('Oluşan şekil kaçgendir : '))
+cevresi = int(input('Şeklin çevresi toplamı kaçtır : '))
+
+print(cevresi/(ucgen_sayisi*3)*olusan_sekil)

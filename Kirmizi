@@ -1,0 +1,20 @@
+kirmizi = int(input('Kırmızının indirim oranı :' ))
+kirmizi_kacinci = int(input('Kaçıncıda indirim var :' ))
+mavi = int(input ('Mavinin indirim oranı : ' ))
+mavi_kacinci = int (input('Kaçıncıda indirim var :' ))
+fark = float (input('Aradaki fark oranı :' ))
+
+baslangic_orani = 100
+kirmizi_oranı = 0
+for x in range (2):
+    if x+1 >= kirmizi_kacinci:
+        kirmizi_oranı += baslangic_orani* ((baslangic_orani-kirmizi)/100)
+    else:
+        kirmizi_oranı += baslangic_orani
+mavi_5oranı = 0
+for x in range (2):
+    if x+1 >= mavi_kacinci:
+        mavi_oranı += baslangic_orani* ((baslangic_orani-mavi) /100)
+    else:
+        mavi_oranı += baslangic_orani
+print ((baslangic_orani/ (kirmizi_oranı-mavi_oranı)) *fark)

@@ -1,0 +1,13 @@
+tahta_uzunlugu = int(input('Tahterevalli uzunluğu : '))
+destek_uzunlugu = int(input ('Destek uzunluğu : '))
+
+yatay_uzunluk_hesaplama = (tahta_uzunlugu/2)** 2 - destek_uzunlugu**2
+i = 1
+while True:
+    if i**2 == yatay_uzunluk_hesaplama:
+        yatay_uzunluk = i
+        break
+    else:
+        i += 1
+
+print (yatay_uzunluk + destek_uzunlugu * 3 + tahta_uzunlugu/2)
